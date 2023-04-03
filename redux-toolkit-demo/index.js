@@ -8,7 +8,7 @@ const fetchUsers = require('./features/user/userSlice').fetchUsers;
 //console.log('Initial state', store.getState());
 
 const unsubscribe = store.subscribe(() => {
-    //console.log('Updated state', store.getState());
+    console.log('Updated state', store.getState());
 })
 
 
@@ -24,4 +24,4 @@ store.dispatch(icecreamActions.restocked(10)) */
 store.dispatch(fetchUsers());
 
 
-unsubscribe();
+//unsubscribe();
